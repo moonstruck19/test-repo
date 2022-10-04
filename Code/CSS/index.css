@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.container {
+    background-color: #005C43;
+}
+.container > #tuoi-cay {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    .container > #tuoi-cay {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .container > #tuoi-cay {
+        width: auto;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .container > #tuoi-cay {
+        display: none;
+    }
+    body {
+        background: url('/Image/img-bg.jpg');
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+        background-position: center;
+        /* background-attachment: fixed; */
+    }
+}
+.getting-started {
+    z-index: 1;
+  }
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);   
+  
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    z-index: 1;
+    display: block;
+}
+
+  
+
